@@ -27,39 +27,3 @@ Run the comprehensive unit test suite:
 python -m unittest test_generator.py
 ```
 
----
-
-## 2. Secure QR Code Generator & Reader
-
-A secure application to encrypt sensitive data and encode it into a QR code, as well as read and decrypt data from an existing QR code image.
-
-### Features
-- **AES-GCM Encryption:** Data is securely encrypted using AES in GCM mode before being stored in the QR code.
-- **Automated Key Management:** Automatically generates or loads a `secret.key` file for encryption/decryption.
-- **QR Code Generation:** Converts encrypted data into a visually distinct QR code.
-- **QR Code Reading:** Uses OpenCV to scan and decode QR codes from uploaded images.
-- **Antigravity UI Effect:** Features a dynamic Tkinter interface with "floating" UI elements.
-
-### Usage
-Run the application using:
-```bash
-python secure_qr_app.py
-```
-
-### Testing
-Run the unit test suite:
-```bash
-python -m unittest test_secure_qr_app.py
-```
-
-## Requirements
-Ensure you have the required dependencies installed:
-- `qrcode`
-- `Pillow`
-- `opencv-python`
-- `pycryptodome`
-- `numpy`
-
-```bash
-pip install qrcode Pillow opencv-python pycryptodome numpy
-```
